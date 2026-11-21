@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AS Clínicas · Medicina Dentária e Estética em Lisboa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3efe9;--card:#fbf9f6;--tinta:#141210;--suave:#6f665e;--acento:#a88c76;--acento-2:#cdb8a6;--linha:rgba(20,18,16,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--tinta);font:400 15px/1.55 Montserrat,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:480px;margin:0 auto;position:relative;overflow:hidden}
+.previa{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:8px 16px;background:var(--tinta);color:#e9e1d8}
+
+/* topo */
+.capa{position:relative;height:300px;overflow:hidden}
+.capa img{width:100%;height:100%;object-fit:cover;object-position:center 4%;filter:saturate(.85)}
+.capa::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(243,239,233,0) 55%,var(--bg) 100%)}
+.marca-agua{position:absolute;left:50%;top:150px;transform:translateX(-50%);font:italic 500 210px/1 'Cormorant Garamond',serif;color:var(--tinta);opacity:.045;pointer-events:none;white-space:nowrap}
+.id{position:relative;text-align:center;margin-top:-76px;padding:0 20px;z-index:2}
+.avatar{width:104px;height:104px;border-radius:50%;border:4px solid var(--bg);box-shadow:0 10px 30px rgba(20,18,16,.14);background:#ebe5dd;object-fit:cover}
+.selo{position:absolute;left:calc(50% + 34px);top:58px;width:58px;height:58px;animation:rodar 26s linear infinite}
+@keyframes rodar{to{transform:rotate(360deg)}}
+.rotulo{display:inline-block;margin-top:16px;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--acento);border:1px solid var(--acento-2);border-radius:99px;padding:6px 14px}
+h1{font:600 40px/1.05 'Cormorant Garamond',serif;margin-top:12px;letter-spacing:.01em}
+h1 em{font-style:italic;font-weight:500;color:var(--acento)}
+.sub{color:var(--suave);margin-top:8px;font-size:15px}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.chip{font-size:12px;font-weight:500;background:var(--card);border:1px solid var(--linha);border-radius:99px;padding:7px 12px;display:flex;align-items:center;gap:6px}
+.chip svg{width:14px;height:14px;stroke:var(--acento)}
+
+/* botões */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:14px;font-weight:600;font-size:15px;letter-spacing:.02em;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-pri{background:var(--tinta);color:#f6f1ea;box-shadow:0 12px 28px rgba(20,18,16,.22)}
+.btn-pri svg{width:20px;height:20px;fill:#f6f1ea}
+.prova{text-align:center;font-size:12px;color:var(--suave);margin-top:10px}
+.bloco{padding:0 16px}
+.cta-topo{margin-top:22px}
+
+/* separador */
+.sep{display:flex;align-items:center;gap:14px;margin:38px 16px 18px;color:var(--acento);font-size:10.5px;letter-spacing:.34em;text-transform:uppercase}
+.sep::before,.sep::after{content:"";flex:1;height:1px;background:var(--acento-2)}
+
+/* tratamentos */
+.trat{display:block;position:relative;border-radius:20px;overflow:hidden;margin-bottom:14px;background:var(--card);box-shadow:0 1px 0 var(--linha),0 14px 30px rgba(20,18,16,.06)}
+.trat .foto{height:178px;overflow:hidden;position:relative}
+.trat .foto img{width:100%;height:100%;object-fit:cover}
+.trat .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,0) 55%,rgba(20,18,16,.35))}
+.trat .tag{position:absolute;left:14px;top:14px;z-index:1;font-size:10px;letter-spacing:.24em;text-transform:uppercase;background:rgba(251,249,246,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:99px;padding:6px 11px}
+.trat .txt{padding:16px 18px 18px;display:flex;align-items:center;gap:14px}
+.trat h3{font:600 25px/1.1 'Cormorant Garamond',serif}
+.trat p{font-size:13.5px;color:var(--suave);margin-top:4px}
+.seta{flex:none;width:44px;height:44px;border-radius:50%;background:var(--tinta);display:grid;place-items:center;margin-left:auto}
+.seta svg{width:18px;height:18px;stroke:#f6f1ea;fill:none;stroke-width:1.8}
+.trat::before{content:"";position:absolute;left:18px;bottom:0;width:48px;height:3px;background:var(--acento);z-index:2}
+
+/* história */
+.historia{margin:30px 16px 0;border-radius:22px;background:var(--tinta);color:#f1ebe3;padding:30px 24px 28px;position:relative;overflow:hidden;text-align:center}
+.historia .ano{font:italic 500 92px/.9 'Cormorant Garamond',serif;color:var(--acento-2);opacity:.9}
+.historia h2{font:600 27px/1.15 'Cormorant Garamond',serif;margin-top:10px}
+.historia p{font-size:14px;color:#c9bfb4;margin-top:10px}
+.historia .arco{position:absolute;inset:auto -60px -150px -60px;height:260px;border:1px solid rgba(205,184,166,.25);border-radius:50%}
+.historia .arco.b{inset:auto -20px -170px -20px;border-color:rgba(205,184,166,.15)}
+
+/* unidades */
+.uni{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:14px 16px;margin-bottom:10px}
+.uni .ic{flex:none;width:44px;height:44px;border-radius:12px;background:linear-gradient(145deg,var(--acento-2),var(--acento));display:grid;place-items:center}
+.uni .ic svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:1.7}
+.uni b{display:block;font-weight:600;font-size:15px}
+.uni span{font-size:12.5px;color:var(--suave)}
+.uni .ir{margin-left:auto;font-size:12px;font-weight:600;color:var(--acento);white-space:nowrap}
+
+/* links secundários */
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lk{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border:1px solid var(--linha);background:var(--card);border-radius:14px;font-size:13.5px;font-weight:500}
+.lk svg{width:17px;height:17px;stroke:var(--tinta);fill:none;stroke-width:1.7}
+.lk.larga{grid-column:1/-1}
+
+.final{margin-top:34px;padding:0 16px}
+.final h2{text-align:center;font:600 30px/1.1 'Cormorant Garamond',serif;margin-bottom:16px}
+.final h2 em{font-style:italic;font-weight:500;color:var(--acento)}
+footer{text-align:center;font-size:11px;color:var(--suave);padding:30px 20px 36px;line-height:1.7}
+footer .mono{font:italic 500 26px 'Cormorant Garamond',serif;color:var(--acento);display:block;margin-bottom:6px}
+@media (min-width:520px){body{padding:24px 0}.wrap{border-radius:28px;box-shadow:0 30px 80px rgba(20,18,16,.12);background:var(--bg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="previa">Prévia · página para o link da bio</div>
+
+  <div class="capa"><img src="img/post4.jpg" alt="Consultório AS Clínicas"></div>
+  <div class="marca-agua">AS</div>
+
+  <div class="id">
+    <img class="avatar" src="img/perfil.jpg" alt="Logótipo AS Clínicas">
+    <svg class="selo" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><circle cx="50" cy="50" r="49" fill="#141210"/><text font-family="Montserrat" font-size="10.5" letter-spacing="4.6" fill="#cdb8a6"><textPath href="#c">DESDE 1986 • LISBOA •</textPath></text><text x="50" y="57" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#f1ebe3">40</text></svg>
+    <span class="rotulo">Medicina Dentária &amp; Estética</span>
+    <h1>AS <em>Clínicas</em></h1>
+    <p class="sub">O seu sorriso, cuidado em Lisboa há 40 anos.</p>
+    <div class="chips">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Av. de Roma &amp; Alvalade</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Clínica licenciada ERS</span>
+    </div>
+  </div>
+
+  <div class="bloco cta-topo">
+    <a class="btn btn-pri" href="https://wa.me/351916892580?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>
+      Marcar consulta de avaliação
+    </a>
+    <p class="prova">Resposta pelo WhatsApp da clínica</p>
+  </div>
+
+  <div class="sep">Tratamentos</div>
+  <div class="bloco">
+    <a class="trat" href="https://wa.me/351916892580?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20branqueamento%20Philips%20Zoom." target="_blank" rel="noopener">
+      <div class="foto"><span class="tag">Caso real</span><img src="img/post3.jpg" alt="Antes e depois de branqueamento" style="object-position:center 40%;transform:scale(1.15);transform-origin:center 40%"></div>
+      <div class="txt"><div><h3>Branqueamento Philips Zoom</h3><p>Dentes mais brancos, feito em consultório.</p></div><span class="seta"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a class="trat" href="https://wa.me/351916892580?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20alinhadores%20transparentes." target="_blank" rel="noopener">
+      <div class="foto"><span class="tag">Caso real</span><img src="img/post5.jpg" alt="Antes e depois com alinhadores transparentes" style="object-position:center 82%"></div>
+      <div class="txt"><div><h3>Alinhadores transparentes</h3><p>Alinhar os dentes sem aparelho à vista.</p></div><span class="seta"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a class="trat" href="https://wa.me/351916892580?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20est%C3%A9tica%20dent%C3%A1ria." target="_blank" rel="noopener">
+      <div class="foto"><span class="tag">Caso real</span><img src="img/post10.jpg" alt="Antes e depois de estética dentária" style="object-position:center 80%"></div>
+      <div class="txt"><div><h3>Estética do sorriso</h3><p>Forma, cor e harmonia, caso a caso.</p></div><span class="seta"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+  </div>
+
+  <div class="historia">
+    <div class="ano">1986</div>
+    <h2>Gerações de sorrisos em Lisboa</h2>
+    <p>Desde 1986 a acompanhar famílias, com a primeira consulta dedicada a ouvir o que quer mudar no seu sorriso.</p>
+    <div class="arco"></div><div class="arco b"></div>
+  </div>
+
+  <div class="sep">Onde estamos</div>
+  <div class="bloco">
+    <a class="uni" href="https://www.google.com/maps/search/AS+Cl%C3%ADnicas+Avenida+de+Roma+Lisboa" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+      <div><b>Avenida de Roma</b><span>Lisboa</span></div><span class="ir">Como chegar →</span>
+    </a>
+    <a class="uni" href="https://www.google.com/maps/search/AS+Cl%C3%ADnicas+Alvalade+Lisboa" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+      <div><b>Alvalade</b><span>Lisboa</span></div><span class="ir">Como chegar →</span>
+    </a>
+  </div>
+
+  <div class="sep">Mais</div>
+  <div class="bloco links">
+    <a class="lk" href="https://www.google.com/maps/search/AS+Cl%C3%ADnicas+Lisboa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Avaliações Google</a>
+    <a class="lk" href="https://www.asclinicas.pt" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>Site</a>
+    <a class="lk larga" href="https://www.instagram.com/asclinicas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Antes &amp; depois no Instagram</a>
+  </div>
+
+  <div class="final">
+    <h2>Pronto para o <em>seu</em> sorriso?</h2>
+    <a class="btn btn-pri" href="https://wa.me/351916892580?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Marcar consulta de avaliação</a>
+  </div>
+
+  <footer><span class="mono">A/S</span>AS Clínicas · Medicina Dentária e Estética · Lisboa<br>ERS E144460/108415 · Resultados variam de pessoa para pessoa</footer>
+</div>
+</body>
+</html>
