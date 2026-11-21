@@ -18,15 +18,16 @@ a{color:inherit;text-decoration:none}
 .previa{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:8px 16px;background:var(--tinta);color:#e9e1d8}
 
 /* topo */
-.capa{position:relative;height:300px;overflow:hidden}
-.capa img{width:100%;height:100%;object-fit:cover;object-position:center 4%;filter:saturate(.85)}
-.capa::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(243,239,233,0) 55%,var(--bg) 100%)}
-.marca-agua{position:absolute;left:50%;top:150px;transform:translateX(-50%);font:italic 500 210px/1 'Cormorant Garamond',serif;color:var(--tinta);opacity:.045;pointer-events:none;white-space:nowrap}
-.id{position:relative;text-align:center;margin-top:-76px;padding:0 20px;z-index:2}
-.avatar{width:104px;height:104px;border-radius:50%;border:4px solid var(--bg);box-shadow:0 10px 30px rgba(20,18,16,.14);background:#ebe5dd;object-fit:cover}
-.selo{position:absolute;left:calc(50% + 34px);top:58px;width:58px;height:58px;animation:rodar 26s linear infinite}
+.capa{position:relative;aspect-ratio:1080/730;overflow:hidden;margin:12px 12px 0;border-radius:22px}
+.capa img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+.capa::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,0) 60%,rgba(20,18,16,.28) 100%)}
+.marca-agua{display:none}
+.id{position:relative;text-align:center;margin-top:-54px;padding:0 20px;z-index:2}
+.logo{position:relative;display:inline-block}
+.avatar{display:block;width:108px;height:108px;border-radius:50%;border:5px solid var(--bg);box-shadow:0 10px 30px rgba(20,18,16,.16);background:#ebe5dd;object-fit:cover}
+.selo{position:absolute;right:-20px;bottom:-2px;width:50px;height:50px;border-radius:50%;border:3px solid var(--bg);animation:rodar 26s linear infinite}
 @keyframes rodar{to{transform:rotate(360deg)}}
-.rotulo{display:inline-block;margin-top:16px;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--acento);border:1px solid var(--acento-2);border-radius:99px;padding:6px 14px}
+.rotulo{display:inline-block;margin-top:18px;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--acento);border:1px solid var(--acento-2);border-radius:99px;padding:6px 14px}
 h1{font:600 40px/1.05 'Cormorant Garamond',serif;margin-top:12px;letter-spacing:.01em}
 h1 em{font-style:italic;font-weight:500;color:var(--acento)}
 .sub{color:var(--suave);margin-top:8px;font-size:15px}
@@ -94,12 +95,12 @@ footer .mono{font:italic 500 26px 'Cormorant Garamond',serif;color:var(--acento)
 <div class="wrap">
   <div class="previa">Prévia · página para o link da bio</div>
 
-  <div class="capa"><img src="img/post4.jpg" alt="Consultório AS Clínicas"></div>
+  <div class="capa"><img src="img/capa.jpg" alt="Médica dentista da AS Clínicas no consultório"></div>
   <div class="marca-agua">AS</div>
 
   <div class="id">
-    <img class="avatar" src="img/perfil.jpg" alt="Logótipo AS Clínicas">
-    <svg class="selo" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><circle cx="50" cy="50" r="49" fill="#141210"/><text font-family="Montserrat" font-size="10.5" letter-spacing="4.6" fill="#cdb8a6"><textPath href="#c">DESDE 1986 • LISBOA •</textPath></text><text x="50" y="57" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#f1ebe3">40</text></svg>
+    <div class="logo"><img class="avatar" src="img/perfil.jpg" alt="Logótipo AS Clínicas">
+    <svg class="selo" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><circle cx="50" cy="50" r="49" fill="#141210"/><text font-family="Montserrat" font-size="10.5" letter-spacing="4.6" fill="#cdb8a6"><textPath href="#c">DESDE 1986 • LISBOA •</textPath></text><text x="50" y="57" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#f1ebe3">40</text></svg></div>
     <span class="rotulo">Medicina Dentária &amp; Estética</span>
     <h1>AS <em>Clínicas</em></h1>
     <p class="sub">O seu sorriso, cuidado em Lisboa há 40 anos.</p>
